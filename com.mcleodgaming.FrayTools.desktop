@@ -1,0 +1,21 @@
+[Desktop Entry]
+Name=FrayTools
+Exec=fraytools.sh %U
+Terminal=false
+Type=Application
+Icon=com.mcleodgaming.FrayTools
+StartupWMClass=fraytools
+Comment=FrayTools
+Categories=Development;
+
+
+
+
+
+
+
+
+
+
+
+

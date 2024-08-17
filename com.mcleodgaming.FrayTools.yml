@@ -1,0 +1,60 @@
+---
+app-id: com.mcleodgaming.FrayTools
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+base: org.electronjs.Electron2.BaseApp
+base-version: '23.08'
+tags:
+  - proprietary
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.node18
+  - org.freedesktop.Platform.GL.default
+
+command: fraytools.sh
+separate-locales: false
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=pulseaudio
+  - --share=network
+  - --device=dri
+  - --filesystem=home
+  - --filesystem=/mnt
+  - --filesystem=/run/media
+  - --filesystem=/media
+  - --filesystem=~/FrayToolsData:rw
+  - --filesystem=xdg-run/app/com.discordapp.Discord:create
+  - --filesystem=~/.local/share/fonts:ro
+  - --share=network
+  - --share=ipc
+  - --env=FRAYTOOLS_CLEAN_CACHE=1
+  - --env=FRAYTOOLS_DISABLE_GPU=0
+  - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons:~/.icons
+  - --env=PATH=/usr/bin:/app/bin
+  - --env=LD_LIBRARY_PATH=/app
+
+build-options:
+  append-path: /usr/lib/sdk/node18/bin
+  env:
+    NPM_CONFIG_LOGLEVEL: info
+modules:
+  - name: fraytools
+    buildsystem: simple
+    build-commands:
+      - mkdir -p bin share/{applications,icons/hicolor/256x256/apps}
+      - mv ${FLATPAK_ID}.png          share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
+      - mv ${FLATPAK_ID}.desktop      share/applications/${FLATPAK_ID}.desktop
+      - mv fraytools.sh  bin/fraytools.sh
+      - cp -r *  ${FLATPAK_DEST}
+    sources:
+      - type: archive
+        url: https://cdn.mcleodgaming.com/fraytools/downloads/c2250c11/FrayTools-0.2.0-linux-x64.tar.gz
+        sha256: 96a86f10f07443f911244d7101c372b7035dfc6232ce8ce91d302bbb9c15bc5f
+      - type: file
+        path: fraytools.sh
+      - type: file
+        path: com.mcleodgaming.FrayTools.desktop
+      - type: file
+        path: com.mcleodgaming.FrayTools.png
+      
