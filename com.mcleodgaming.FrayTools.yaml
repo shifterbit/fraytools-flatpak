@@ -9,7 +9,6 @@ tags:
   - proprietary
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node18
-  - org.freedesktop.Platform.GL.default
 
 command: fraytools.sh
 separate-locales: false
