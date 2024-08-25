@@ -95,7 +95,7 @@ pages:
     # replace html assets relative path with pages absolute path
     - find $BUILD_OUTPUT_PATH \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i -e "s#href=\"\/#href=\"$CI_PAGES_URL/#g" -e "s#src=\"\/#src=\"$CI_PAGES_URL/#g"
   script:
-    - mkdir public || true
+    - mkdir -p public || true
     - rsync -av --exclude='public' --exclude='.git' $BUILD_OUTPUT_PATH/ public
     - cp ./com.mcleodgaming.FrayTools.flatpakref public/fraytools.flatpakref
   artifacts:
