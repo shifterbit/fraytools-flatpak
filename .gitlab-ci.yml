@@ -1,3 +1,4 @@
+---
 variables:
   # Application id of the app, should be same as id used in flatpak manifest and MetaInfo
   APP_ID: com.mcleodgaming.FrayTools
