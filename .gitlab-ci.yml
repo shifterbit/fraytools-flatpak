@@ -57,6 +57,8 @@ flatpak:
       cat <<EOF > /etc/group
       root:x:0:
       EOF
+    - export GPG_TTY=$(tty)
+    - echo "GPG_TTY is $GPG_TTY"
 
     # Sets up the stable Flathub repository for dependencies
     - flatpak remote-add --user --if-not-exists flathub ${RUNTIME_REPO}
