@@ -80,7 +80,7 @@ flatpak:
     - if: $CI_PIPELINE_SOURCE == "schedule"
       when: never
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-      when: on_success
+      when: manual
     - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
       when: manual
 
