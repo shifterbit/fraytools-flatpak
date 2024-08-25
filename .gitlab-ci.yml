@@ -97,6 +97,7 @@ pages:
   script:
     - mkdir public || true
     - rsync -av --exclude='public' --exclude='.git' $BUILD_OUTPUT_PATH/ public
+    - ls
   artifacts:
     paths:
       - public
