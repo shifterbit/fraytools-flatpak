@@ -64,8 +64,7 @@ flatpak:
     - gpg --list-keys --with-keygrip
     - echo "allow-preset-passphrase" >> ~/.gnupg/gpg-agent.conf
     - echo "pinentry-mode loopback" >> ~/.gnupg/gpg-agent.conf
-    - echo ~/.gnupg/gpg-agent.conf
-    - gpgconf --kill gpg-agent
+    - cat ~/.gnupg/gpg-agent.conf
     - gpg-connect-agent reloadagent /bye
     - cat $GPG_PASSPHRASE | /usr/libexec/gpg-preset-passphrase --preset $GPG_KEY_GREP
     - gpg --import --batch ${GPG_PRIVATE_KEY}
