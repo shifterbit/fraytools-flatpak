@@ -97,7 +97,7 @@ pages:
   script:
     - mkdir public || true
     - rsync -av --exclude='public' --exclude='.git' $BUILD_OUTPUT_PATH/ public
-    - ls
+    - cp ./com.mcleodgaming.FrayTools.flatpakref public/fraytools.flatpakref
   artifacts:
     paths:
       - public
