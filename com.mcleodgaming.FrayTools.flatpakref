@@ -2,8 +2,8 @@
 Title=Fraytools
 Name=com.mcleodgaming.FrayTools
 Branch=master
-Urle=https://gitlab.com/shifterbit/fraytools-flatpak
-SuggestRemoteName=fraytools-flatak
+Url=https://gitlab.com/shifterbit/fraytools-flatpak
+SuggestRemoteName=fraytools-flatpak
 Homepage=https://gitlab.com/shifterbit/fraytools-flatpak
 RuntimeRepo=https://dl.flathub.org/repo/flathub.flatpakrepo
 IsRuntime=false
