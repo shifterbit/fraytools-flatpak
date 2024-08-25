@@ -61,6 +61,8 @@ flatpak:
     - flatpak remote-add --user --if-not-exists flathub ${RUNTIME_REPO}
     
     # Sets up GPG signing
+    - mkdir ~/.gnupg
+    - touch ~/.gnupg/gpg-agent.conf
     - echo "allow-preset-passphrase" >> ~/.gnupg/gpg-agent.conf
     - gpg --list-keys --with-keygrip
     - cat ~/.gnupg/gpg-agent.conf
