@@ -18,7 +18,6 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --device=dri
-  - --filesystem=home
   - --filesystem=/mnt
   - --filesystem=/run/media
   - --filesystem=/media
