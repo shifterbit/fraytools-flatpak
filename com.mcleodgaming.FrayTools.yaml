@@ -22,7 +22,7 @@ finish-args:
   - --filesystem=/mnt
   - --filesystem=/run/media
   - --filesystem=/media
-  - --filesystem=~/FrayToolsData:rw
+  - --persist=FrayToolsData
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
   - --filesystem=~/.local/share/fonts:ro
   - --share=network
