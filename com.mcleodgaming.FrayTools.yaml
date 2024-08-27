@@ -18,9 +18,6 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --device=dri
-  - --filesystem=/mnt
-  - --filesystem=/run/media
-  - --filesystem=/media
   - --persist=FrayToolsData
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
   - --filesystem=~/.local/share/fonts:ro
