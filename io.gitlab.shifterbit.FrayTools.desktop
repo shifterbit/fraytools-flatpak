@@ -3,9 +3,9 @@ Name=FrayTools
 Exec=fraytools.sh %U
 Terminal=false
 Type=Application
-Icon=com.mcleodgaming.FrayTools
+Icon=io.gitlab.shifterbit.FrayTools
 StartupWMClass=fraytools
-Comment=FrayTools
+Comment=Unofficial FrayTools Flatpak
 Categories=Development;
 
 

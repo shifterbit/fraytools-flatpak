@@ -54,7 +54,7 @@ fi
 echo "Debug: Will run Fraytools with the following arguments: ${EXTRA_ARGS[@]}"
 echo "Debug: Additionally, user gave: $@"
 
-export FLATPAK_ID="${FLATPAK_ID:-org.mcleodgaming.Fraytools}"
+export FLATPAK_ID="${FLATPAK_ID:-io.gitlab.shifterbit.Fraytools}"
 export TMPDIR="${XDG_RUNTIME_DIR}/app/${FLATPAK_ID}"
 
 # Discord RPC
