@@ -1,6 +1,6 @@
 variables:
   # Application id of the app, should be same as id used in flatpak manifest and MetaInfo
-  APP_ID: com.mcleodgaming.FrayTools
+  APP_ID: io.gitlab.shifterbit.FrayTools
   # Location of the flatpak manifest, root of git repository
   MANIFEST_PATH: $CI_PROJECT_DIR/${APP_ID}.yaml
   # Name of flatpak bundle
@@ -97,7 +97,7 @@ pages:
   script:
     - mkdir -p public || true
     - rsync -av --exclude='public' --exclude='.git' $BUILD_OUTPUT_PATH/ public
-    - cp ./com.mcleodgaming.FrayTools.flatpakref public/fraytools.flatpakref
+    - cp ./io.gitlab.shifterbit.FrayTools.flatpakref public/fraytools.flatpakref
   artifacts:
     paths:
       - public
