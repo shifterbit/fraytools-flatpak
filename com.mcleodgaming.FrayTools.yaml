@@ -36,7 +36,8 @@ modules:
   - name: fraytools
     buildsystem: simple
     build-commands:
-      - mkdir -p bin share/{applications,icons/hicolor/256x256/apps}
+      - mkdir -p bin share/{metainfo,applications,icons/hicolor/256x256/apps}
+      - mv ${FLATPAK_ID}.metainfo.xml share/metainfo/${FLATPAK_ID}.metainfo.xml
       - mv ${FLATPAK_ID}.png          share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
       - mv ${FLATPAK_ID}.desktop      share/applications/${FLATPAK_ID}.desktop
       - mv fraytools.sh  bin/fraytools.sh
