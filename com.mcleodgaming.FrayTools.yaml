@@ -52,4 +52,6 @@ modules:
         path: com.mcleodgaming.FrayTools.desktop
       - type: file
         path: com.mcleodgaming.FrayTools.png
+      - type: file
+        path: com.mcleodgaming.FrayTools.metainfo.xml
       
