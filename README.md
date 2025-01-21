@@ -1,15 +1,15 @@
 # Unofficial Fraytools Flatpak
 
 ## Installation Instructions
+
+## Linux Installation Instructions
+### Setup Flatpak(Skip This Step if you're a steam deck user)
+https://flatpak.org/setup/
+### Adding the Flatpak Repo
 ```sh
-flatpak install --user https://shifterbit.gitlab.io/fraytools-flatpak/fraytools.flatpakref
+flatpak remote-add --if-not-exists fraytools https://shifterbit.github.io/fraytools-flatpak/index.flatpakrepo
+flatpak install com.mcleodgaming.FrayTools
 ```
-
-## Differences from Running the Linux Build Directly
-### Filesystem Permissions
-Given that this is a flatpak, it is also sandboxed so by default it won't have permissions to read your entire home-directory by default, to alleviate this you can use `flatpak override` as such:
-```
-flatpak override --user com.mcleodgaming.FrayTools --filesystem=path-to-directory
-```
-alternatively, you can use a Graphical Tool such as [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal) to do so
-
+Alternatively you can open the url in discover and search for fraytools manager
+- https://shifterbit.github.io/fraytools-flatpak/index.flatpakrepo
+and just right click and open with Discover/GNOME software
