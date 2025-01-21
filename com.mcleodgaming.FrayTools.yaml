@@ -1,5 +1,5 @@
 ---
-app-id: io.gitlab.shifterbit.FrayTools
+app-id: com.mcleodgaming.FrayTools
 runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
@@ -16,12 +16,10 @@ finish-args:
   - --share=ipc
   - --socket=x11
   - --socket=pulseaudio
-  - --share=network
   - --device=dri
-  - --persist=FrayToolsData
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
   - --filesystem=~/.local/share/fonts:ro
-  - --filesystem=~/FrayToolsData
+  - --filesystem=host
   - --share=network
   - --share=ipc
   - --env=FRAYTOOLS_CLEAN_CACHE=1
@@ -50,7 +48,7 @@ modules:
       - type: file
         path: fraytools.sh
       - type: file
-        path: io.gitlab.shifterbit.FrayTools.desktop
+        path: com.mcleodgaming.FrayTools.desktop
       - type: file
-        path: io.gitlab.shifterbit.FrayTools.png
+        path: com.mcleodgaming.FrayTools.png
       

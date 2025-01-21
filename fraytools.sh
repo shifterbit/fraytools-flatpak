@@ -13,7 +13,7 @@ add_argument() {
 }
 
 # Nvidia GPUs may need to disable GPU acceleration:
-# flatpak override --user --env=OBSIDIAN_DISABLE_GPU=1 md.obsidian.Obsidian
+# flatpak override --user --env=FRAYTOOLS_DISABLE_GPU=1 md.obsidian.Obsidian
 add_argument FRAYTOOLS_DISABLE_GPU       --disable-gpu
 
 # Wayland support can be optionally enabled like so:

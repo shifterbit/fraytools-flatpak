@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.mcleodgaming.FrayTools</id>
+  
+  <name>FrayTools</name>
+  <developer id="com.mcleodgaming">
+    <name>Mcleodgaming</name>
+  </developer>
+  <launchable type="desktop-id">com.mcleodgaming.FrayTools.desktop</launchable>
+  <summary>A Plugin and Template Manager for FrayTools</summary>
+  
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LGPL-2.1-or-later</project_license>
+  <project_license>LicenseRef-proprietary=https://fraytools.com/eula/</project_license>
+  <url type="homepage">https://fraytools.com</url>
+  <content_rating type="oars-1.0" />
+  
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+  <requires>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <display_length compare="ge">768</display_length>
+  </requires>
+
+  <description>
+    <p>FrayTools is a multi-purpose, cross-platform, engine-agnostic multimedia software designed to streamline the asset management process for video games and other mediums. It offers a variety of features one might need when working on an interactive project.</p>
+  </description>
+  <categories>
+      <category>Development</category>
+  </categories>
+
+    <keywords>
+      <keyword>development</keyword>
+      <keyword>programming</keyword>
+      <keyword>gamedev</keyword>
+      <keyword>fraymakers</keyword>
+      <keyword>fraytools</keyword>
+      <keyword>fray</keyword>
+    </keywords>
+ 
+  <screenshots>
+    <screenshot type="default">
+      <image></image>
+      <caption>Entity timeline</caption>
+    </screenshot>
+    <screenshot>
+      <image></image>
+      <caption>Hitbox Stats View</caption>
+    </screenshot>
+    <screenshot>
+      <image></image>
+      <caption>Script file</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.2.0"/>
+  </releases>
+</component>
