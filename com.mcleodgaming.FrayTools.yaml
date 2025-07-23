@@ -41,10 +41,10 @@ modules:
       - mv ${FLATPAK_ID}.png          share/icons/hicolor/256x256/apps/${FLATPAK_ID}.png
       - mv ${FLATPAK_ID}.desktop      share/applications/${FLATPAK_ID}.desktop
       - mv fraytools.sh  bin/fraytools.sh
-      - cp -r *  ${FLATPAK_DEST}
+      - cp -r * ${FLATPAK_DEST}
     sources:
       - type: archive
-        url: https://cdn.mcleodgaming.com/fraytools/downloads/c2250c11/FrayTools-0.2.0-linux-x64.tar.gz
+        url: https://cdn.mcleodgaming.com/fraytools/downloads/c2250c11/FrayTools-0.3.0-linux-x64.tar.gz
         sha256: 96a86f10f07443f911244d7101c372b7035dfc6232ce8ce91d302bbb9c15bc5f
       - type: file
         path: fraytools.sh
