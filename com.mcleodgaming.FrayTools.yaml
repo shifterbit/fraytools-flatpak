@@ -45,7 +45,7 @@ modules:
     sources:
       - type: archive
         url: https://cdn.mcleodgaming.com/fraytools/downloads/c2250c11/FrayTools-0.3.0-linux-x64.tar.gz
-        sha256: 96a86f10f07443f911244d7101c372b7035dfc6232ce8ce91d302bbb9c15bc5f
+        sha256: cff2c9379927d8c7718c30a60a36c7b3a7e0813041dd50f5c6c885d5c821b77a
       - type: file
         path: fraytools.sh
       - type: file
