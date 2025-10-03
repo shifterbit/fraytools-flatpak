@@ -44,8 +44,8 @@ modules:
       - cp -r * ${FLATPAK_DEST}
     sources:
       - type: archive
-        url: https://cdn.mcleodgaming.com/fraytools/downloads/166a490/FrayTools-0.3.0-linux-x64.tar.gz
-        sha256: cff2c9379927d8c7718c30a60a36c7b3a7e0813041dd50f5c6c885d5c821b77a
+        url: https://cdn.mcleodgaming.com/fraytools/downloads/c9e4ce45/FrayTools-0.4.0-linux-x64.tar.gz
+        sha256: 6b3973a2877be1ef806d69496aba480b7af8ac3ac7b258b638d21369fe43ac95
       - type: file
         path: fraytools.sh
       - type: file
