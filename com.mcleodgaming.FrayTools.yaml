@@ -1,14 +1,14 @@
 ---
 app-id: com.mcleodgaming.FrayTools
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: '25.08'
 tags:
   - proprietary
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node18
+  - org.freedesktop.Sdk.Extension.node24
 
 command: fraytools.sh
 separate-locales: false
@@ -44,8 +44,8 @@ modules:
       - cp -r * ${FLATPAK_DEST}
     sources:
       - type: archive
-        url: https://cdn.mcleodgaming.com/fraytools/downloads/c9e4ce45/FrayTools-0.4.0-linux-x64.tar.gz
-        sha256: 6b3973a2877be1ef806d69496aba480b7af8ac3ac7b258b638d21369fe43ac95
+        url: https://cdn.mcleodgaming.com/fraytools/downloads/af894ca2/FrayTools-0.5.0-linux-x64.tar.gz
+        sha256: dce8865192800cce923a2c2ad5403ecc00cc448894621870f712ba8770a78c26
       - type: file
         path: fraytools.sh
       - type: file
